@@ -38,7 +38,7 @@ The following options are available when creating a device:
 * `--overflow=<zeros|noise|discard>` to specify what happens when the device is running out of data.
 * `--[no-]eof-on-idle` determines whether a pipe or output file is closed as soon as the audio engine side of the device is idle.
 * `--raw` to omit volume scaling and clipping operations on sample data.
-* `--posix_pipe` will report EPIPE (broken pipe) to I/O requests if there is no active client on the GUI side. Some command line tools require this to work if data is piped to or from a vpcm device.
+* `--posix-pipe` will report EPIPE (broken pipe) to I/O requests if there is no active client on the GUI side. Some command line tools require this to work if data is piped to or from a vpcm device.
 
 Besides the `create` command, a few other commands are available:
 * `delete <GUI name>` deletes a device with given GUI name.
