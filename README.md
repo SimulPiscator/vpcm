@@ -44,3 +44,8 @@ Besides the `create` command, a few other commands are available:
 * `delete <GUI name>` deletes a device with given GUI name.
 * `name <GUI name>` provides the device path of the device with the given GUI name on the next read from the vpcmctl device.
 * `describe <GUI name>` provides the GUI device name, with all options, of the named device. Output will be available on the next read from the vpcmctl device.
+
+## Troubleshooting
+* Installer fails to copy compiled kext into `/System/Library/Extensions:` "read-only file system".
+
+  Beginning with MacOS BigSur, the location for kernel extensions is `/Library/Extensions.` Manually copy the kext there.
