@@ -1,3 +1,3 @@
 #!/bin/sh
 
-kextunload -q /System/Library/Extensions/vpcm.kext || kextunload -q /System/Library/Extensions/vpcm.kext
+kextunload -q /Library/Extensions/vpcm.kext || kextunload -q /Library/Extensions/vpcm.kext
