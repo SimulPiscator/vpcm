@@ -44,3 +44,12 @@ Besides the `create` command, a few other commands are available:
 * `delete <GUI name>` deletes a device with given GUI name.
 * `name <GUI name>` provides the device path of the device with the given GUI name on the next read from the vpcmctl device.
 * `describe <GUI name>` provides the GUI device name, with all options, of the named device. Output will be available on the next read from the vpcmctl device.
+
+## Build
+* Open the XCode project at `Source/vpcm.xcodeproj/`
+* Choose Product->Build For->Running from the XCode menu
+* The kext will be located at `Build/InstallerRoot/System/Library/Extensions/vpcm.kext`
+
+## Install
+To install, copy the kext to `/Library/Extensions` (not `/System/Library/Extensions`).
+Reboot the machine for the installation to take effect.
