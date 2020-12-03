@@ -116,7 +116,7 @@
 			dependencies = (
 			);
 			name = vpcm;
-			productName = Soundflower;
+			productName = "vpcm Virtual Audio Driver";
 			productReference = 222ADFEC1862531600C9BE56 /* vpcm.kext */;
 			productType = "com.apple.product-type.kernel-extension";
 		};
