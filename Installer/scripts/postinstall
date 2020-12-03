@@ -1,4 +1,4 @@
 #!/bin/sh
 
-touch /System/Library/Extensions
-kextload /System/Library/Extensions/vpcm.kext
+touch /Library/Extensions
+kextload /Library/Extensions/vpcm.kext
