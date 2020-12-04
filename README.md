@@ -48,7 +48,7 @@ Besides the `create` command, a few other commands are available:
 ## Build
 * Open the XCode project at `Source/vpcm.xcodeproj/`
 * Choose Product->Build For->Running from the XCode menu
-* The kext will be located at `Build/InstallerRoot/System/Library/Extensions/vpcm.kext`
+* The kext will be located at `Build/InstallerRoot/Library/Extensions/vpcm.kext`
 
 ## Install
 To install, copy the kext to `/Library/Extensions` (not `/System/Library/Extensions`).

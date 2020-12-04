@@ -302,6 +302,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_GROUP = wheel;
 				INSTALL_OWNER = root;
+				INSTALL_PATH = "$(LIBRARY_KEXT_INSTALL_PATH)";
 				MODULE_NAME = com.vpcm.driver.vpcm;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = org.vpcm.driver.vpcm;
@@ -327,6 +328,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_GROUP = wheel;
 				INSTALL_OWNER = root;
+				INSTALL_PATH = "$(LIBRARY_KEXT_INSTALL_PATH)";
 				MODULE_NAME = com.vpcm.driver.vpcm;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = org.vpcm.driver.vpcm;
