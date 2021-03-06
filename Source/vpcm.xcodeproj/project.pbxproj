@@ -308,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.vpcm.driver.vpcm;
 				PRODUCT_NAME = vpcm;
 				SDKROOT = macosx;
-				VALID_ARCHS = x86_64;
+				VALID_ARCHS = "x86_64 arm64 arm64e";
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Debug;
@@ -334,7 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.vpcm.driver.vpcm;
 				PRODUCT_NAME = vpcm;
 				SDKROOT = macosx;
-				VALID_ARCHS = x86_64;
+				VALID_ARCHS = "x86_64 arm64 arm64e";
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Release;

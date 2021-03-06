@@ -34,8 +34,10 @@ public:
     virtual IOReturn eraseOutputSamples( const void*, void*, UInt32, UInt32, const IOAudioStreamFormat*, IOAudioStream* );
     virtual IOReturn clipOutputSamples( const void*, void*, UInt32, UInt32, const IOAudioStreamFormat*, IOAudioStream* );
     virtual IOReturn convertInputSamples( const void*, void*, UInt32, UInt32, const IOAudioStreamFormat*, IOAudioStream* );
-  
-
+#if TARGET_OS_OSX && TARGET_CPU_ARM64
+    virtual bool driverDesiresHiResSampleIntervals( void );
+#endif
+    
 private:
     void onBufferTimer( IOTimerEventSource* );
     IOReturn onControlChanged( IOAudioControl*, SInt32, SInt32 );

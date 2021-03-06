@@ -426,6 +426,12 @@ VpcmAudioEngine::convertInputSamples( const void*, void* inpDest, UInt32 inFrame
   return kIOReturnSuccess;
 }
 
+#if TARGET_OS_OSX && TARGET_CPU_ARM64
+bool VpcmAudioEngine::driverDesiresHiResSampleIntervals() {
+    return false;
+}
+#endif
+
 int
 VpcmAudioEngine::getIOFlags() const
 {
@@ -595,4 +601,5 @@ VpcmAudioEngine::devReadWrite( struct uio* uio )
   __sync_sub_and_fetch( &mDevIOBytesAvail, transferred );
   return err;
 }
+
 
