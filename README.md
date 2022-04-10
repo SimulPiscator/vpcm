@@ -1,8 +1,8 @@
 
 # vpcm
 
-vpcm is a kernel extension similar to SoundFlower (https://github.com/mattingalls/Soundflower).
-Unlike SoundFlower, it does not only create virtual sound devices in your computer's GUI, but also entries for virtual devices in your computer's `/dev` filesystem.
+vpcm is a kernel extension similar to SoundFlower (https://github.com/mattingalls/Soundflower) or BlackHole (https://github.com/ExistentialAudio/BlackHole).
+Unlike SoundFlower and BlackHole, it does not only create virtual sound devices in your computer's GUI, but also entries for virtual devices in your computer's `/dev` filesystem.
 
 This is is useful in conjunction with existing sound tools from Linux available through Homebrew or MacPorts, or to send audio data over the network using a streaming tool like `netcat`.
 
