@@ -50,6 +50,10 @@ Besides the `create` command, a few other commands are available:
 * Choose Product->Build For->Running from the XCode menu
 * The kext will be located at `Build/InstallerRoot/Library/Extensions/vpcm.kext`
 
+## Disable kext signing
+To allow the kext to be loaded, disable kext signing as described here:
+https://github.com/sergeybratus/netfluke/blob/master/howto-disable-kext-signing.txt
+
 ## Install
 To install, copy the kext to `/Library/Extensions` (not `/System/Library/Extensions`).
 Reboot the machine for the installation to take effect.
